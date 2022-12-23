@@ -2,23 +2,11 @@ import React from 'react'
 import {useState} from 'react'
 
 const Courses = () => {
-  const [price, setPrice] = useState(0)
-  const [discount, setDiscount] = useState(0)
-  const [commission, setCommission] = useState(0)
-  const [amount, setAmount] = useState(0)
-
-  const handleChange = () => {
-    var deduction = discount + commission
-    var payment = price - price*((deduction)/100)
-    var fees = payment*0.02 + (payment*0.02)*0.18
-    setAmount(deduction)
-    setAlert("d-none")
-  }
 
   return (
     <>
         <div className="container m-8 py-4">
-            <h2>Create Course <span className='badge bg-primary ms-4'>Admin Panel</span></h2>
+            <h2>Create and manage courses <span className='badge bg-primary ms-4'>Admin Panel</span></h2>
             <p className='lh-lg'>
                 Courses can be created easily from the admin panel.
                 Please note that, if any 2 courses have different name/category/language/price then they must be created separately.
@@ -86,28 +74,6 @@ const Courses = () => {
                   Amount you'll get = 800 - 18.88 = <i className='bi-currency-rupee'></i>781.12
                 </p>
               </div>
-              <form className="container-fluid" onChange={(e)=>{handleChange()}}>
-                <h4 className='mb-4'>Payment Calculator</h4>
-
-                <label htmlFor="price">Course Price</label>
-                <input type="tel" className='form-control mb-3' name="price" id="price" value={price} onChange={(e)=>{setPrice(e.target.value)}}/>
-
-                <label htmlFor="discount">Discount (in %)</label>
-                <input type="tel" className='form-control mb-3' name="discount" id="discount" value={discount} onChange={(e)=>{setDiscount(e.target.value)}}/>
-
-                <label htmlFor="commission">Commission (in %)</label>
-                <input type="tel" className='form-control mb-3' name="commission" id="commission" value={commission} onChange={(e)=>{setCommission(e.target.value)}}/>
-
-                <div className="w-full d-flex flex-row align-items-center justify-content-between">
-                  <div className="w-full d-flex flex-column align-start justify-start">
-                    <p>You will get</p>
-                    <h4><i className='bi-currency-rupee'></i>{amount}</h4>
-                  </div>
-                  <div>
-                    <button type="submit" className='btn btn-primary'>Check</button>
-                  </div>
-                </div>
-              </form>
 
             </div>
 
