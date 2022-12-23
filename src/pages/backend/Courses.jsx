@@ -1,5 +1,5 @@
 import React from 'react'
-import {useState} from 'react'
+import { Link } from 'react-router-dom'
 
 const Courses = () => {
 
@@ -21,11 +21,11 @@ const Courses = () => {
                 <br />
                 <i className='bi-record-circle'></i> <b>Course Duration</b>- The duration of the entire course in hours
                 <br />
-                <i className='bi-record-circle'></i> <b>Course Thumbnail</b>- The URL of the course thumbnail image taken from the Storj bucket. To know about copying URLs from Storj, <a href="https://storj.io">click here.</a>
+                <i className='bi-record-circle'></i> <b>Course Thumbnail</b>- The URL of the course thumbnail image taken from the Storj bucket. To know about copying URLs from Storj, <Link to="/backend/storage-and-streaming">click here.</Link>
                 <br />
-                <i className='bi-record-circle'></i> <b>Intro Video</b>- The introduction video ID (from Bunny) of the course that will be shown in the overview page before purchasing it. To know about copying video IDs from Bunny, <a href="https://bunny.net">click here.</a>
+                <i className='bi-record-circle'></i> <b>Intro Video</b>- The introduction video ID (from Bunny) of the course that will be shown in the overview page before purchasing it. To know about copying video IDs from Bunny, <Link to="/backend/storage-and-streaming">click here.</Link>
                 <br />
-                <i className='bi-record-circle'></i> <b>Coming Soon?</b>- The introduction video ID (from Bunny) of the course that will be shown in the overview page before purchasing it. To know about copying video IDs from Bunny, <a href="https://bunny.net">click here.</a>
+                <i className='bi-record-circle'></i> <b>Coming Soon?</b>- Select if the course should be set live or shown as "Coming Soon" to the audience
                 <br />
                 <i className='bi-record-circle'></i> <b>Category</b>- The category of the course.
                 <br />

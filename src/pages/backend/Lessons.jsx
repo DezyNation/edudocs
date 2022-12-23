@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Lessons = () => {
 
@@ -9,7 +9,7 @@ const Lessons = () => {
         <h2>Create and manage lessons <span className='badge bg-primary ms-4'>Admin Panel</span></h2>
         <p className='lh-lg'>
           Lessons can be created easily from the admin panel.<br />
-          <b>Make sure you have <a href="/backend/topics">created the topic</a> properly before adding lessons to it.</b>
+          <b>Make sure you have <Link to="/backend/topics">created the topic</Link> properly before adding lessons to it.</b>
           <br /><br />
           To create a lesson, you must be logged in as admin. Once you succesfully login, click on the <b>Topics</b> option in the sidepanel of the dashboard.
           Afterwards, click on the <span className='badge bg-primary'>+ Add Lesson</span> button to create and add a lesson to any topic.
@@ -19,9 +19,9 @@ const Lessons = () => {
           <br />
           <i className='bi-record-circle'></i> <b>Lesson Name</b>- The name of the topic
           <br />
-          <i className='bi-record-circle'></i> <b>Lesson Video URL</b>- Upload your lesson videos to Bunny and paste it's unique ID. <a href='/backend/storage-and-streaming'>View more info about Bunny uploads</a>.
+          <i className='bi-record-circle'></i> <b>Lesson Video URL</b>- Upload your lesson videos to Bunny and paste it's unique ID. <Link to='/backend/storage-and-streaming'>View more info about Bunny uploads</Link>.
           <br />
-          <i className='bi-record-circle'></i> <b>Topic</b>- Select the topic with which you will like to attach this lesson. If you can't see your topic, create it by following <a href="/backend/topics">these steps</a>.
+          <i className='bi-record-circle'></i> <b>Topic</b>- Select the topic with which you will like to attach this lesson. If you can't see your topic, create it by following <Link to="/backend/topics">these steps</Link>.
           <br />
           <i className='bi-record-circle'></i> <b>Serial Number</b>- By default, lessons are added to the topic as per the time when they were created. You can enter any number of your choice here to change the order.
           <br />

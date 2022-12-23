@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Misc = () => {
     return (
@@ -37,14 +38,14 @@ const Misc = () => {
                     For example, if your shareable URL is <b>https://link.storjshare.io/jxove4ij6ej5rvfs7h7d3bt6m5ma/website-assets%2Fconfetti.png</b> <br />
                     Then your final URL should look like <b style={{color:'rgb(150,150,150)'}}>https://link.storjshare.io/<span style={{color: 'black'}}>s/</span>jxove4ij6ej5rvfs7h7d3bt6m5ma/website-assets<span style={{color: 'black'}}>/</span>confetti.png</b>
                     <br /><br />
-                    Your URL is ready to be used anywhere in the Edulec website. You can use this process to <a href="/backend/topics">add Document to a topic</a>.
+                    Your URL is ready to be used anywhere in the Edulec website. You can use this process to <Link to="/backend/topics">add Document to a topic</Link>.
                 </p>
                 <br /><br /><br />
                 <h3>Bunny</h3>
                 <p className='lh-lg'>
                     We are using Bunny to store and serve lesson videos in the Edulec platform.
                     <br />
-                    You can add your video ID while <a href="/backend/lessons">creating the lessons</a>. To get the unique ID of videos from Bunny, follow these steps:
+                    You can add your video ID while <Link to="/backend/lessons">creating the lessons</Link>. To get the unique ID of videos from Bunny, follow these steps:
                     <br />
                     <b>#1: </b> Login to your Bunny dashboard.
                     <br />
@@ -58,7 +59,7 @@ const Misc = () => {
                     <br />
                     <b>#6: </b> Copy the <b>Video ID</b> from the right-hand-side of the dialogue box that just appeared.
                     <br /><br />
-                    Use this unique video ID while <a href="/backend/lessons">creating the lessons</a> through the Edulec admin panel.
+                    Use this unique video ID while <Link to="/backend/lessons">creating the lessons</Link> through the Edulec admin panel.
                 </p>
             </div>
         </>

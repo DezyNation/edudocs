@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Topics = () => {
 
@@ -9,7 +9,7 @@ const Topics = () => {
         <h2>Create and manage topics <span className='badge bg-primary ms-4'>Admin Panel</span></h2>
         <p className='lh-lg'>
           Course topics can be created easily from the admin panel.<br />
-          <b>Make sure you have <a href="/backend/courses">created the course</a> properly before creating its topics.</b>
+          <b>Make sure you have <Link to="/backend/courses">created the course</Link> properly before creating its topics.</b>
           <br /><br />
           To create a topic, you must be logged in as admin. Once you succesfully login, click on the <b>Topics</b> option in the sidepanel of the dashboard.
           Afterwards, click on the <span className='badge bg-primary'>+ Add Topic</span> button to create and add a topic to any course.
@@ -19,9 +19,9 @@ const Topics = () => {
           <br />
           <i className='bi-record-circle'></i> <b>Topic Name</b>- The name of the topic
           <br />
-          <i className='bi-record-circle'></i> <b>Document</b>- Documents have to be attached to each topic. Upload your document to Storj and paste it's link here. <a href='/backend/storage-and-streaming'>View more info about Storj uploads</a>.
+          <i className='bi-record-circle'></i> <b>Document</b>- Documents have to be attached to each topic. Upload your document to Storj and paste it's link here. <Link to='/backend/storage-and-streaming'>View more info about Storj uploads</Link>.
           <br />
-          <i className='bi-record-circle'></i> <b>Course</b>- Select the course with which you will like to attach this topic. If you can't see your course, create it by following <a href="/backend/courses">these steps</a>. 
+          <i className='bi-record-circle'></i> <b>Course</b>- Select the course with which you will like to attach this topic. If you can't see your course, create it by following <Link to="/backend/courses">these steps</Link>. 
           <br />
           <i className='bi-record-circle'></i> <b>Serial Number</b>- By default, topics are added to the course as per the time when they were created. You can enter any number of your choice here to change the order. 
           <br />
