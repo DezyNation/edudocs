@@ -37,7 +37,7 @@ const Navbar = () => {
                     <li>
                         <hr className="dropdown-divider" />
                     </li>
-                    <li><Link className="dropdown-item" to="#">Users</Link></li>
+                    <li><Link className="dropdown-item" to="/backend/users">Users</Link></li>
                     <li><Link className="dropdown-item" to="#">Affiliate</Link></li>
                     <li><Link className="dropdown-item" to="#">Job Portal</Link></li>
                     <li><Link className="dropdown-item" to="#">Corporate Subscription</Link></li>
