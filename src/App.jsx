@@ -8,6 +8,7 @@ import Courses from './pages/backend/Courses'
 import Topics from './pages/backend/Topics'
 import Lessons from './pages/backend/Lessons'
 import Misc from './pages/backend/Misc'
+import Users from './pages/backend/Users'
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
         <Route path='/backend/topics' element={<Topics />}/>
         <Route path='/backend/lessons' element={<Lessons />}/>
         <Route path='/backend/storage-and-streaming' element={<Misc />}/>
+        <Route path='/backend/users' element={<Users />}/>
+
       </Routes>
     </>
   )
